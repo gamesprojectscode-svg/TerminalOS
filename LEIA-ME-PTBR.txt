@@ -1,0 +1,28 @@
+TERMINAL OS — PROJETO PARA GERAR APK NA NUVEM
+
+IMPORTANTE
+Este arquivo ZIP contém o código-fonte Android, não um APK pronto. A compilação é feita gratuitamente pelo GitHub Actions depois de enviar o projeto para um repositório GitHub.
+
+COMO GERAR O APK SEM INSTALAR ANDROID STUDIO
+1. No computador, extraia TerminalOS-Cloud.zip.
+2. Entre em https://github.com e crie uma conta ou entre na sua conta.
+3. Crie um repositório novo chamado TerminalOS. Pode deixar privado ou público.
+4. Envie os arquivos e pastas deste projeto para o repositório, mantendo a pasta .github/workflows (se ela não aparecer no envio pelo navegador, crie a pasta e o arquivo build-apk.yml manualmente no GitHub).
+5. Abra a aba Actions do repositório.
+6. Se solicitado, habilite workflows. Escolha “Build Terminal OS APK” e toque em “Run workflow”. Se não aparecer, faça primeiro um commit na branch main.
+7. Aguarde o workflow terminar com um visto verde.
+8. Abra a execução concluída, vá até Artifacts e baixe “TerminalOS-APK”. O ZIP baixado contém app-debug.apk.
+9. Extraia o arquivo e transfira app-debug.apk para o Galaxy A06. Abra-o e permita instalar aplicativos desta fonte se o Android solicitar.
+
+O APK debug é para teste/uso próprio. Não é uma versão assinada para publicação na Play Store.
+
+O QUE FUNCIONA
+- Interface mobile adaptável.
+- Terminal com help, clear, wifi, bluetooth/bt, settings/config, info, version e date.
+- wifi e bluetooth abrem os painéis oficiais do Android (ou a tela de configurações como alternativa).
+- settings abre Configurações do aparelho.
+
+LIMITAÇÕES DE SEGURANÇA DO ANDROID
+Sem root e sem permissões privilegiadas, um app normal não pode executar comandos shell administrativos livremente, alternar todos os rádios diretamente em todas as versões Android, nem extrair senhas Wi-Fi salvas. Para ver a senha da própria rede, use as opções oficiais de Wi-Fi/Compartilhar e autentique no aparelho.
+
+Se a compilação falhar, abra a execução no GitHub Actions e envie uma captura da parte vermelha do erro.

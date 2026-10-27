@@ -26,3 +26,6 @@ LIMITAÇÕES DE SEGURANÇA DO ANDROID
 Sem root e sem permissões privilegiadas, um app normal não pode executar comandos shell administrativos livremente, alternar todos os rádios diretamente em todas as versões Android, nem extrair senhas Wi-Fi salvas. Para ver a senha da própria rede, use as opções oficiais de Wi-Fi/Compartilhar e autentique no aparelho.
 
 Se a compilação falhar, abra a execução no GitHub Actions e envie uma captura da parte vermelha do erro.
+
+
+VERSÃO 2.0 PLUS: interface redesenhada, logo vetorial, comandos help/clear/wifi/ipconfig/ifconfig/device/date/version e leitura dos dados de rede permitidos (IP, gateway, DNS e SSID quando o Android disponibilizar). Senhas Wi-Fi não são expostas a apps comuns sem root/permissões privilegiadas.
